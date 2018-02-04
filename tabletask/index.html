@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="window-1251">
+    <link rel="stylesheet" href="style.css" />
+    <title></title>
+  </head>
+  <body>
+<div>
+  Выберите размер данных:
+  <button id="small" onclick="getData('small')">Маленький</button>
+  <button id="big"
+  onclick="getData('big')">Большой</button>
+  <span class="loading">   Загрузка...   <div class="total">
+    <div class="loaded"></div>
+  </div></span>
+</div>
+<hr />
+<div class="navigation">
+  <button id="first" onclick="toFirst()">Первая</button>
+  <div class="pages">
+    <button id="prev" onclick="toPrev()"></button>
+    <button id="current" disabled></button>
+    <button id="next" onclick="toNext()"></button>
+  </div>
+  <button id="last" onclick="toLast()">Последняя</button>
+</div>
+<form>
+  <input name="filter" type="text" placeholder="отфильтровать" />
+  <input type="radio" value="all" name="sort"/>
+  <label>По всей таблице</label>
+  <input type="radio" value="current" name="sort" checked/>
+  <label>Текущую страницу</label>
+</form>
+
+<table id="table">
+<thead>
+  <tr>
+      <td onclick="sortBy('id')">id<span class="sort-by-id"></span></td>
+      <td onclick="sortBy('fn')">first name<span class="sort-by-fn"></span></td>
+      <td onclick="sortBy('ln')">last name<span class="sort-by-ln"></span></td>
+      <td onclick="sortBy('em')">email<span class="sort-by-em"></span></td>
+      <td onclick="sortBy('ph')">phone<span class="sort-by-ph"></span></td>
+  </tr>
+</thead>
+<tbody id="tbody"></tbody>
+</table>
+
+<div class="info">
+<p>Выбран пользователь <b class="name"></b></p>
+Описание:<br />
+<textarea class="description" rows="5" cols="70">
+</textarea> <br />
+<p>Адрес проживания: <b class="street"></b></p>
+<p>Город: <b class="city"></b></p>
+<p>Провинция/штат: <b class="state"></b></p>
+<p>Индекс: <b class="zip"></b></p>
+</div>
+  <script src="scripts.js"></script>
+  </body>
+</html>

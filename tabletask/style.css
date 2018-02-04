@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  margin-left: 50px;
+}
+table td {
+  border: 1px solid black;
+  padding: 5px;
+  cursor: pointer;
+
+}
+table thead td{
+  font-weight: bold;
+  background-color: yellow;
+  font-size: 20px;
+}
+
+.info {
+  margin-left: 50px;
+  margin-top: 20px;
+  background-color: #f47a0a;
+  padding: 10px;
+  width: 520px;
+}
+.navigation {
+  margin: 5px;
+}
+#first {
+  display: inline-block;
+}
+.pages {
+  margin-left: 300px;
+  display: inline-block;
+}
+#last {
+  float: right;
+}
+form {
+  margin-left: 50px;
+}
+.total {
+  width: 270px;
+  border: 1px solid black;
+  display: inline-block;
+}
+.loaded {
+  width: 0px;
+  height: 5px;
+  background-color: green;
+}
